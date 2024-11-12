@@ -71,10 +71,18 @@ console.log(resultArray);
 
 const arrayStart = [1,49,2,5,67,51,3,42,45,4,12];
 
+/**
+ * Prendi un array, un numero di inizio e fine e restituisci un array con i valori con index tra i valori di inizio/fine
+ *
+ * @param {array[numeri]} array
+ * @param {num} start
+ * @param {num} end
+ * @returns {{array}}
+ */
 const findBetween = (array, start, end) => {
     let resultArr = [];
     let j = 0;
-    
+
     for (let i = 0; i <= end; i++){
         if (j < start){
             j++;

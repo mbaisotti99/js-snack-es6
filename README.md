@@ -49,7 +49,7 @@ Creo una copia dell'array e
         Cancella nome 
 
 
-## Svolgimento Snack 3
+## Consegna Snack 3
 
 - Snack 3 (Bonus)
 Scrivere una funzione che accetti tre argomenti, un array e due numeri (a più piccolo di b).

@@ -37,3 +37,32 @@ const searchLightest = (array, key) => {
 const lightestBike = searchLightest(bikeArray, "peso")
 console.log(lightestBike);
 
+// ----------------------------------------------------------------------------------------
+
+// SNACK 2
+
+const footBallTeams = [
+    {nome: "Rubentus", punti: 0, falliSub: 0},
+    {nome: "InterRacial", punti: 0, falliSub: 0},
+    {nome: "Brazil", punti: 0, falliSub: 0},
+    {nome: "Ateam", punti: 0, falliSub: 0},
+    {nome: "Bteam", punti: 0, falliSub: 0}
+]
+
+const randomInteger = (min, max) =>{
+    let result = Math.floor(Math.random() * (max - min + 1) + min)
+    return result;
+}
+
+for (let i = 0; i < footBallTeams.length; i++){
+    footBallTeams[i]["punti"] = randomInteger(0, 50);
+    footBallTeams[i]["falliSub"] = randomInteger(0, 50);
+}
+
+const resultArray = footBallTeams.slice();
+
+for (let i = 0; i < resultArray.length; i++){
+    delete resultArray[i]["nome"];
+}
+
+console.log(resultArray);

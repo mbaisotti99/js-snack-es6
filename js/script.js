@@ -66,3 +66,25 @@ for (let i = 0; i < resultArray.length; i++){
 }
 
 console.log(resultArray);
+
+//---------------------------------------------------------------------------------------------
+
+const arrayStart = [1,49,2,5,67,51,3,42,45,4,12];
+
+const findBetween = (array, start, end) => {
+    let resultArr = [];
+    let j = 0;
+    
+    for (let i = 0; i <= end; i++){
+        if (j < start){
+            j++;
+        } else{
+            resultArr.push(array[i])
+        }
+    }
+    return resultArr;
+}
+
+const resultArray1 = findBetween(arrayStart, 2, 6);
+console.log(resultArray1);
+
